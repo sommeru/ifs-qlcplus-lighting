@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=IFS Lighting
+Comment=IFS DMX profile
+Icon=/usr/share/pixmaps/qlcplus.png
+Exec=/home/pi/ifs-lighting.sh
+Type=Application
+Terminal=false
