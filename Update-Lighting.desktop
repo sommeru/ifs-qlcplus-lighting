@@ -1,8 +1,7 @@
 [Desktop Entry]
 Name=Update IFS Lighting
-Categories=None;
 Comment=Updates the IFS DMX profile
 Icon=/usr/share/pixmaps/qlcplus-fixtureeditor.png
-Exec=/home/pi/Documents/ifs-qlcplus-lighting/update-from-git.sh
+Exec=/home/pi/Documents/ifs-qlcplus-lighting/update-Lighting.sh
 Type=Application
-Terminal=false
+Terminal=true
