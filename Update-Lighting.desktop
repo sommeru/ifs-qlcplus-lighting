@@ -2,6 +2,6 @@
 Name=Update IFS Lighting
 Comment=Updates the IFS DMX profile
 Icon=/usr/share/pixmaps/qlcplus-fixtureeditor.png
-Exec=/home/pi/Documents/ifs-qlcplus-lighting/update-Lighting.sh
+Exec=/home/pi/Documents/ifs-qlcplus-lighting/update-lighting.sh
 Type=Application
 Terminal=true
