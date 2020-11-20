@@ -2,6 +2,6 @@
 Name=IFS Lighting
 Comment=IFS DMX profile
 Icon=/usr/share/pixmaps/qlcplus.png
-Exec=/home/pi/ifs-lighting.sh
+Exec=/home/pi/Documents/ifs-qlcplus-lighting/ifs-lighting.sh
 Type=Application
 Terminal=false
