@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.12.3</Version>
-  <Author></Author>
+  <Author>Ulrich Sommer</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="USB DMX" ID="0">
     <Input Plugin="OSC" Line="0"/>
-    <Output Plugin="DMX USB" Line="0">
-     <PluginParameters UniverseChannels="3"/>
-    </Output>
+    <Output Plugin="DMX USB" Line="0"/>
    </Universe>
   </InputOutputMap>
   <Fixture>
@@ -30,17 +28,21 @@
    <Size X="1" Y="1"/>
    <Head X="0" Y="0" Fixture="0">0</Head>
   </FixtureGroup>
+  <Function ID="0" Type="Scene" Name="Bright Red">
+   <Speed FadeIn="3000" FadeOut="3000" Duration="0"/>
+   <FixtureVal ID="0">0,255,1,0,2,0</FixtureVal>
+  </Function>
   <Function ID="2" Type="Scene" Name="IFS Light Blue">
    <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
    <FixtureVal ID="0">0,0,1,159,2,255</FixtureVal>
   </Function>
   <Function ID="3" Type="Scene" Name="IFS Dark Blue">
    <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
-   <FixtureVal ID="0">0,0,1,67,2,255</FixtureVal>
+   <FixtureVal ID="0">0,0,1,0,2,255</FixtureVal>
   </Function>
   <Function ID="5" Type="Scene" Name="Pause Green">
    <Speed FadeIn="1000" FadeOut="1000" Duration="0"/>
-   <FixtureVal ID="0">0,0,1,255,2,51</FixtureVal>
+   <FixtureVal ID="0">0,0,1,255,2,0</FixtureVal>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="0">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
@@ -67,7 +69,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="0" Width="750" Height="470"/>
+    <WindowState Visible="False" X="0" Y="0" Width="750" Height="470"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>False</ShowHeader>
@@ -76,41 +78,54 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="IFS Dark Blue" ID="8" Icon="">
-     <WindowState Visible="True" X="5" Y="5" Width="220" Height="460"/>
+     <WindowState Visible="False" X="5" Y="5" Width="220" Height="460"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>4279567853</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>FreeSans,18,-1,5,63,0,0,0,0,0,Bold</Font>
+      <Font>FreeSans,18,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="3"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="IFS Light Blue" ID="9" Icon="">
-     <WindowState Visible="True" X="230" Y="5" Width="220" Height="460"/>
+     <WindowState Visible="False" X="230" Y="5" Width="220" Height="460"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>4279233261</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>FreeSans,18,-1,5,63,0,0,0,0,0,Bold</Font>
+      <Font>FreeSans,18,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="2"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="Pause Green" ID="10" Icon="">
-     <WindowState Visible="True" X="455" Y="5" Width="220" Height="460"/>
+     <WindowState Visible="False" X="455" Y="5" Width="220" Height="225"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
       <BackgroundColor>4279233826</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
-      <Font>FreeSans,18,-1,5,63,0,0,0,0,0,Bold</Font>
+      <Font>FreeSans,18,-1,5,50,0,0,0,0,0</Font>
      </Appearance>
      <Function ID="5"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Bright Red" ID="0" Icon="">
+     <WindowState Visible="False" X="455" Y="240" Width="220" Height="225"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>4293066762</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>FreeSans,18,-1,5,50,0,0,0,0,0</Font>
+     </Appearance>
+     <Function ID="0"/>
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
     </Button>
